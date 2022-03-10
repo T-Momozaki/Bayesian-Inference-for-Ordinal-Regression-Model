@@ -19,7 +19,7 @@ gs_lvm_binary = function(y, # binary response data
                          bn=500, # burn-in
                          seed=1234
 ){
-  set.seed(1234)
+  set.seed(seed)
   
   # sample size
   n = length(y)
