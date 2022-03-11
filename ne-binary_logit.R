@@ -26,7 +26,7 @@ y_t = as.numeric(z_t>0) # response with t-dist error
 y_l = as.numeric(z_l>0) # response with logistic error
 
 # read function of implementing the Gibbs sampling for binary response
-source("https://raw.githubusercontent.com/T-Momozaki/Bayesian-Inference-for-Ordinal-Regression-Model/binary-probit/lvm-binary.R")
+source("https://raw.githubusercontent.com/T-Momozaki/Bayesian-Inference-for-Ordinal-Regression-Model/lvm-binary/lvm-binary.R")
 
 # implementing the Gibbs sampling
 df_mc_n_l_u = gs_lvm_binary(y_n,X,model="logit",prior="unif",mc=5000,bn=2000)
